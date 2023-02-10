@@ -32,8 +32,8 @@ and tell the person sitting next to you what your guess is.
 
    |                        | `str` | `list` | `deque` |
    | ---------------------- | ----- | ------ | ------- |
-   | `check_palindrome_1`   |  5.62 |  5.04  |  77.6   |
-   | `check_palindrome_2`   |  4.15 |  4.13  |  4.13   |
+   | `check_palindrome_1`   |       |        |         |
+   | `check_palindrome_2`   |       |        |         |
 
    **HINT:**
    The runtimes for indexing into a string are the same as those for indexing a list, which is O(1).
@@ -87,8 +87,8 @@ Complete the following table with actual measured runtimes by substituting the v
 
 |                        | `xs=("1"*65536)` | `xs=([1]*65536)` | `xs=deque([1]*65536)` |
 | ---------------------- | ---------------- | ---------------- | --------------------- |
-| `check_palindrome_1`   |                  |                  |                       |
-| `check_palindrome_2`   |                  |                  |                       |
+| `check_palindrome_1`   |      5.62        |    5.04          |        77.6           |
+| `check_palindrome_2`   |      4.15        |    4.13          |        4.13           |
 
 You should observe that one of these entries is significantly slower than the others.
 This tells us that the runtime of a function depends on: (1) the algorithm that it is implemented with, and (2) the data types it is run on.
